@@ -14,7 +14,7 @@ let port = DEFAULT_PORT;
 app.use(morgan('dev'));
 
 // Setup app folders.
-app.use(express.static('Mercedez'));
+app.use(express.static('Mercedes'));
 
 // Set up a route for index.html
 app.get('*', (req, res) => {
