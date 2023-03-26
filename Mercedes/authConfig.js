@@ -37,3 +37,13 @@ const msalConfig = {
         }
       }
 };
+
+const loginRequest = {
+    scopes: ["openid", ...apiConfig.b2cScopes],
+  };
+  
+
+  const tokenRequest = {
+    scopes: [...apiConfig.b2cScopes],  // e.g. ["https://fabrikamb2c.onmicrosoft.com/helloapi/demo.read"]
+    forceRefresh: false // Set this to "true" to skip a cached token and go to the server to get a new token
+  };
